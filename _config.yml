@@ -6,4 +6,6 @@ defaults:
         path: ""
       values:
         layout: "main"
+gems:
+    - jekyll-sitemap
 title: Alvin's Blog
