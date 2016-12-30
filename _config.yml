@@ -8,4 +8,5 @@ defaults:
         layout: "main"
 gems:
     - jekyll-sitemap
+    - jemoji
 title: Alvin's Blog
