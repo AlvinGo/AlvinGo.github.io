@@ -9,4 +9,4 @@ Welcome to ***AlvinGo‘s Blog***!
 	- [Process Explorer](/WindowsUtilities/ProcessExplorer/Part_1.html)
 	
 - Python
-	- [Jypeter Notebook install Python kernels](/Python/JupyterNotebook_Install_Python_Kernels.html)
+	- [Jupyter Notebook install Python kernels](/Python/JupyterNotebook_Install_Python_Kernels.html)
