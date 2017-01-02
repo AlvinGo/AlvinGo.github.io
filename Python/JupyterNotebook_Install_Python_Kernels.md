@@ -1,5 +1,5 @@
 ---
-
+title: Jupyter 安装python kernel
 ---
 
 ## Jupyter安装python2/3 kernel
