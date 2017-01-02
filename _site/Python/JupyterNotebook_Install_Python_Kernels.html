@@ -30,6 +30,15 @@
       <section id="main_content">
       <h2 id="jupyterpython23-kernel">Jupyter安装python2/3 kernel</h2>
 
+    {% if site.github.releases[0] %}
+      {% assign release = site.github.releases[0] %}
+      <p>
+        Latest release:
+        <strong><a href="{{release.html_url}}">{{release.tag_name}}</a></strong>
+        ({{release.published_at | date: '%B %e, %Y'}})
+      </p>
+    {% endif %}
+
 <ul>
   <li>Python3里安装Python2 Kernel</li>
 </ul>
