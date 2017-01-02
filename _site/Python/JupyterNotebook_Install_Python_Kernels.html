@@ -12,6 +12,7 @@
   <body>
 
     <header>
+
       <div class="container">
       
         <h1>Alvin's Blog</h1>
@@ -29,15 +30,6 @@
     <div class="container">
       <section id="main_content">
       <h2 id="jupyterpython23-kernel">Jupyter安装python2/3 kernel</h2>
-
-    {% if site.github.releases[0] %}
-      {% assign release = site.github.releases[0] %}
-      <p>
-        Latest release:
-        <strong><a href="{{release.html_url}}">{{release.tag_name}}</a></strong>
-        ({{release.published_at | date: '%B %e, %Y'}})
-      </p>
-    {% endif %}
 
 <ul>
   <li>Python3里安装Python2 Kernel</li>
@@ -64,6 +56,6 @@ python3 -m ipykernel install --user
       </section>
     </div>
 
-    
+    <footer><a href="https://alvingo.github.io">返回首页</a></footer>
   </body>
 </html>
