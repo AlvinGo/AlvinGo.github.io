@@ -10,3 +10,6 @@ Welcome to ***AlvinGo‘s Blog***!
 	
 - Python
 	- [Jupyter Notebook install Python kernels](/Python/JupyterNotebook_Install_Python_Kernels.html)
+
+- Batch
+	- [获取文件夹中前N个文件](WindowsUtilities/Batch/GetFirstNFiles.html)

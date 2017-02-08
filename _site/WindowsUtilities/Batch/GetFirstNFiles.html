@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=888c3a99db0a635f6962f07847bcedaca289e58b">
+  
+    <title>获取文件夹中前N个文件</title>
+  
+  </head>
+
+  <body>
+
+    <header>
+
+      <div class="container">
+      
+        <h1>获取文件夹中前N个文件</h1>
+      
+
+        <h2>Later means never.</h2>
+
+        <section id="downloads">
+          
+          <a href="https://github.com/AlvinGo/AlvinGo.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+      <div class="language-bash highlighter-rouge"><pre class="highlight"><code>@echo off
+
+<span class="nb">set </span><span class="nv">input</span><span class="o">=</span><span class="s2">"list.txt"</span>
+
+<span class="nb">set </span><span class="nv">srcDir</span><span class="o">=</span><span class="s2">"%1"</span>
+
+<span class="nb">set</span> /a <span class="nv">fileCount</span><span class="o">=</span>10
+
+<span class="nb">set</span> /a <span class="nv">curIndex</span><span class="o">=</span>0
+
+<span class="nb">set </span><span class="nv">line</span><span class="o">=</span>
+
+setlocal enabledelayedexpansion
+
+:: 创建一个空的文件
+echo. 2&gt; %input%
+
+<span class="k">for</span> /f %%f <span class="k">in</span> <span class="o">(</span><span class="s1">'dir %srcDir%\*.jpg /l /b'</span><span class="o">)</span> <span class="k">do</span> <span class="o">(</span>
+	<span class="nb">echo</span> %%f &gt;&gt; %input%
+	
+	:: 更新当前获取的文件数量
+	<span class="nb">set</span> /a <span class="nv">curIndex</span><span class="o">=</span>!curIndex! + 1
+	<span class="k">if</span> !curIndex!<span class="o">==</span>%fileCount% goto eof
+<span class="o">)</span>
+
+:eof
+</code></pre>
+</div>
+
+      </section>
+      <footer><a href="https://alvingo.github.io">返回首页</a></footer>
+    </div>
+  </body>
+</html>
