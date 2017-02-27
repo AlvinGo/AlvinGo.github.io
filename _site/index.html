@@ -1,58 +1,311 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link rel="stylesheet" href="/assets/css/style.css?v=888c3a99db0a635f6962f07847bcedaca289e58b">
-  
+<html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>Alvin's Blog</title>
-  
-  </head>
+    <link rel="stylesheet" href="/assets/vendor/primer-css/css/primer.css">
+    <link rel="stylesheet" href="/assets/vendor/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="/assets/vendor/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="/assets/css/components/collection.css">
+    <link rel="stylesheet" href="/assets/css/components/repo-card.css">
+    <link rel="stylesheet" href="/assets/css/sections/repo-list.css">
+    <link rel="stylesheet" href="/assets/css/sections/mini-repo-list.css">
+    <link rel="stylesheet" href="/assets/css/components/boxed-group.css">
+    <link rel="stylesheet" href="/assets/css/globals/common.css">
+    <link rel="stylesheet" href="/assets/vendor/share.js/dist/css/share.min.css">
+    <link rel="stylesheet" href="/assets/css/globals/responsive.css">
+    <link rel="stylesheet" href="/assets/css/posts/index.css">
+    <!-- Latest compiled and minified CSS -->
+    
+    <link rel="stylesheet" href="/assets/css/pages/index.css">
+    
 
-  <body>
-
-    <header>
-
-      <div class="container">
-      
-        <h1>Alvin's Blog</h1>
-      
-
-        <h2>Later means never.</h2>
-
-        <section id="downloads">
-          
-          <a href="https://github.com/AlvinGo/AlvinGo.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
+    
+    <link rel="canonical" href="http://localhost:4000/">
+    <link rel="alternate" type="application/atom+xml" title="Alvin's Blog" href="/feed.xml">
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <meta name="keywords" content="Alvin">
+    <meta name="description" content="Alvin的个人博客">
+    
+    
+        
+    
+    <meta property="og:url" content="http://localhost:4000/">
+    <meta property="og:site_name" content="Alvin's Blog">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_CN" />
+    
+    <script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/js/jquery-ui.js"></script>
+    <script type="text/javascript">
+    function toggleMenu() {
+        var nav = document.getElementsByClassName("site-header-nav")[0];
+        if (nav.style.display == "inline-flex") {
+          nav.style.display = "none";
+        } else {
+          nav.style.display = "inline-flex";
+        }
+    }
+    </script>
+</head>
+<body class="home" data-mz="home">
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="/" title="Alvin's Blog"><span class="octicon octicon-mark-github"></span> Alvin's Blog</a></h1>
+            <button class="collapsed mobile-visible" type="button" onclick="toggleMenu();">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <nav class="site-header-nav" role="navigation">
+                
+                <a href="/" class=" site-header-nav-item" target="" title="首页">首页</a>
+                
+                <a href="/categories/" class=" site-header-nav-item" target="" title="分类">分类</a>
+                
+                <a href="/wiki/" class=" site-header-nav-item" target="" title="维基">维基</a>
+                
+                <a href="/links/" class=" site-header-nav-item" target="" title="链接">链接</a>
+                
+                <a href="/about/" class=" site-header-nav-item" target="" title="关于">关于</a>
+                
+            </nav>
+        </div>
     </header>
+    <!-- / header -->
 
-    <div class="container">
-      <section id="main_content">
-      <h3 id="welcome">Welcome</h3>
-
-<p>Welcome to <strong><em>AlvinGo‘s Blog</em></strong>!</p>
-
-<ul>
-  <li>System Internal 工具
-    <ul>
-      <li><a href="/WindowsUtilities/ProcessExplorer/Part_1.html">Process Explorer</a></li>
-    </ul>
-  </li>
-  <li>Python
-    <ul>
-      <li><a href="/Python/JupyterNotebook_Install_Python_Kernels.html">Jupyter Notebook install Python kernels</a></li>
-    </ul>
-  </li>
-  <li>Batch
-    <ul>
-      <li><a href="WindowsUtilities/Batch/GetFirstNFiles.html">获取文件夹中前N个文件</a></li>
-    </ul>
-  </li>
-</ul>
-
-      </section>
-      <footer><a href="https://alvingo.github.io">返回首页</a></footer>
+    <section class="banner">
+    <div class="collection-head">
+        <div class="container">
+            <div class="collection-title">
+              <h1 class="collection-header" id="sub-title"><span>Later means never.</span></h1>
+                <div class="collection-info">
+                    <span class="meta-info mobile-hidden">
+                        <span class="octicon octicon-location"></span>
+                        Beijing, China
+                    </span>
+                    <span class="meta-info">
+                        <span class="octicon octicon-organization"></span>
+                        <a href="" target="_blank"></a>
+                    </span>
+                     <span class="meta-info">
+                        <span class="octicon octicon-mark-github"></span>
+                        <a href="https://github.com/alvingo" target="_blank">alvingo</a>
+                    </span>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+</section>
+<!-- /.banner -->
+<section class="container content">
+    <div class="columns">
+        <div class="column two-thirds" >
+            <ol class="repo-list">
+                
+            </ol>
+        </div>
+        <div class="column one-third">
+            
+<h3>Search</h3>
+<div id="site_search">
+    <input type="text" id="search_box" placeholder="Search">
+    <button class="btn btn-default" id="site_search_do"><span class="octicon octicon-search"></span></button>
+</div>
+
+<ul id="search_results"></ul>
+
+<link rel="stylesheet" type="text/css" href="/assets/css/modules/sidebar-search.css">
+<script src="/assets/js/lunr.min.js"></script>
+<script src="/assets/js/search.js"></script>
+
+
+            <h3>My Popular Repositories</h3>
+
+
+
+<a href="https://github.com/AlvinGo/Cruiser" target="_blank" class="card text-center">
+    <div class="thumbnail">
+        <div class="card-image geopattern" data-pattern-id="Cruiser">
+            <div class="card-image-cell">
+                <h3 class="card-title">
+                    Cruiser
+                </h3>
+            </div>
+        </div>
+        <div class="caption">
+            <div class="card-description">
+                <p class="card-text">Spiders to crawl data from web pages.</p>
+            </div>
+            <div class="card-text">
+                <span class="meta-info" title="0 stars">
+                    <span class="octicon octicon-star"></span> 0
+                </span>
+                <span class="meta-info" title="0 forks">
+                    <span class="octicon octicon-git-branch"></span> 0
+                </span>
+                <span class="meta-info" title="Last updated：2016-08-28 15:24:44 UTC">
+                    <span class="octicon octicon-clock"></span>
+                    <time datetime="2016-08-28 15:24:44 UTC">2016-08-28</time>
+                </span>
+            </div>
+        </div>
+    </div>
+</a>
+
+<a href="https://github.com/AlvinGo/AlvinGo_archive.github.io" target="_blank" class="card text-center">
+    <div class="thumbnail">
+        <div class="card-image geopattern" data-pattern-id="AlvinGo_archive.github.io">
+            <div class="card-image-cell">
+                <h3 class="card-title">
+                    AlvinGo_archive.github.io
+                </h3>
+            </div>
+        </div>
+        <div class="caption">
+            <div class="card-description">
+                <p class="card-text"></p>
+            </div>
+            <div class="card-text">
+                <span class="meta-info" title="0 stars">
+                    <span class="octicon octicon-star"></span> 0
+                </span>
+                <span class="meta-info" title="0 forks">
+                    <span class="octicon octicon-git-branch"></span> 0
+                </span>
+                <span class="meta-info" title="Last updated：2017-02-27 14:14:24 UTC">
+                    <span class="octicon octicon-clock"></span>
+                    <time datetime="2017-02-27 14:14:24 UTC">2017-02-27</time>
+                </span>
+            </div>
+        </div>
+    </div>
+</a>
+
+<a href="https://github.com/AlvinGo/AlvinGo.github.io" target="_blank" class="card text-center">
+    <div class="thumbnail">
+        <div class="card-image geopattern" data-pattern-id="AlvinGo.github.io">
+            <div class="card-image-cell">
+                <h3 class="card-title">
+                    AlvinGo.github.io
+                </h3>
+            </div>
+        </div>
+        <div class="caption">
+            <div class="card-description">
+                <p class="card-text">Alvin's Blog (Theme forked from https://github.com/mzlogin/mzlogin.github.io)</p>
+            </div>
+            <div class="card-text">
+                <span class="meta-info" title="0 stars">
+                    <span class="octicon octicon-star"></span> 0
+                </span>
+                <span class="meta-info" title="0 forks">
+                    <span class="octicon octicon-git-branch"></span> 0
+                </span>
+                <span class="meta-info" title="Last updated：2017-02-27 14:17:32 UTC">
+                    <span class="octicon octicon-clock"></span>
+                    <time datetime="2017-02-27 14:17:32 UTC">2017-02-27</time>
+                </span>
+            </div>
+        </div>
+    </div>
+</a>
+
+
+
+        </div>
+    </div>
+    <div class="pagination text-align">
+      <div class="btn-group">
+        
+            <button disabled="disabled" href="javascript:;" class="btn btn-outline">&laquo;</button>
+        
+        
+            <a href="/"  class="btn btn-outline">1</a>
+        
+        
+        
+            <button disabled="disabled" href="javascript:;" class="btn btn-outline">&raquo;</button>
+        
+        </div>
+    </div>
+    <!-- /pagination -->
+</section>
+<!-- /section.content -->
+
+    <footer class="container">
+        <div class="site-footer" role="contentinfo">
+            <div class="copyright left mobile-block">
+                    © 2015
+                    <span title="Alvin">Alvin</span>
+                    <a href="javascript:window.scrollTo(0,0)" class="right mobile-visible">TOP</a>
+            </div>
+
+            <ul class="site-footer-links right mobile-hidden">
+                <li>
+                    <a href="javascript:window.scrollTo(0,0)" >TOP</a>
+                </li>
+            </ul>
+            <a href="http://github.com/alvingo/alvingo.github.io" target="_blank" aria-label="view source code">
+                <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+            </a>
+            <ul class="site-footer-links mobile-hidden">
+                
+                <li>
+                    <a href="/" title="首页" target="">首页</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/" title="分类" target="">分类</a>
+                </li>
+                
+                <li>
+                    <a href="/wiki/" title="维基" target="">维基</a>
+                </li>
+                
+                <li>
+                    <a href="/links/" title="链接" target="">链接</a>
+                </li>
+                
+                <li>
+                    <a href="/about/" title="关于" target="">关于</a>
+                </li>
+                
+                <li><a href="/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a></li>
+            </ul>
+
+        </div>
+    </footer>
+    <!-- / footer -->
+    <script src="/assets/vendor/share.js/dist/js/share.min.js"></script>
+    <script src="/assets/js/geopattern.js"></script>
+    <script src="/assets/js/prism.js"></script>
+    <link rel="stylesheet" href="/assets/css/globals/prism.css">
+    <script>
+      jQuery(document).ready(function($) {
+        // geopattern
+        $('.geopattern').each(function(){
+          $(this).geopattern($(this).data('pattern-id'));
+        });
+       // hljs.initHighlightingOnLoad();
+      });
+    </script>
+    
+    <div style="display:none">
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-80669434-1', 'auto');
+        ga('send', 'pageview');
+
+      </script>
+    </div>
+    
+</body>
 </html>
