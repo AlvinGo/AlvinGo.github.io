@@ -1,5 +1,6 @@
 ---
 title: Process Explorer常用操作介绍
+category: Windows Internal Tools
 ---
 
 ## Process Explorer出现的背景

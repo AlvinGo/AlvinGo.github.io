@@ -1,5 +1,7 @@
 ---
 title: 获取文件夹中前N个文件
+tags: 批处理
+category: 批处理
 ---
 
 ``` bash
